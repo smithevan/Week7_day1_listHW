@@ -17,6 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
     methods: {
       saveNewToDo: function () {
         this.todos.push(this.newToDo)
+
+        this.newToDo = ""
+
       }
     }
 
