@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>To-do List</title>
     <script src="./js/bundle.js"></script>
+    <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
     <div id="app">
@@ -12,10 +13,12 @@
           <span>{{ todo }}</span>
       </ul>
 
+      <hr>
+
       <form v-on:submit.prevent="saveNewToDo">
         <label for="new-todo">New ToDo</label>
         <input type="text" id="new-todo" v-model="newToDo">
-        <input type="submit" value="List ToDo">
+        <input type="submit" value="Add Activity">
       </form>
 
     </div>
