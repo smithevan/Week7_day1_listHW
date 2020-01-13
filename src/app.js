@@ -9,10 +9,19 @@ document.addEventListener('DOMContentLoaded', () => {
     data: {
       todos: [
         "Buy shopping", "Clean bathroom", "Car's MOT"
-        ]
+      ],
+
+      newToDo: ""
+    },
+
+    methods: {
+      saveNewToDo: function () {
+        this.todos.push(this.newToDo)
+      }
     }
 
-
   })
+
+
 
 });
